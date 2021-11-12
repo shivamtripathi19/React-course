@@ -1,7 +1,6 @@
 const path = require("path");
-const Dotenv = require("dotenv-webpack");
-const HTMlWebpackPlugin = require("html-webpack-plugin");
-module.exports = (env)=>({
+const HTMlWebpackPlugin = require("html-webpack-plugin")
+module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -12,6 +11,7 @@ module.exports = (env)=>({
       {
         test: /\.(js)$/,
         use: "babel-loader",
+        
       },
       {
         test: /\.(css)$/,
@@ -21,10 +21,7 @@ module.exports = (env)=>({
   },
 
   mode: "development",
-  plugins: [
-    new HTMlWebpackPlugin({
-      template: "public/index.html",
-    }),
-    new Dotenv({path: env.ENVIRONMENT ? `./.env.${env.ENVIRONMENT}` : './.env' ,systemvars: true }),
-  ],
-});
+ plugins: [new HTMlWebpackPlugin({
+    template:'public/index.html'
+  })]
+};
