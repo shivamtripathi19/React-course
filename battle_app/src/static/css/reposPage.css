@@ -1,0 +1,18 @@
+.navList {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-nav {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
