@@ -1,5 +1,5 @@
 {
-  "name": "todo_list",
+  "name": "food_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,8 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
